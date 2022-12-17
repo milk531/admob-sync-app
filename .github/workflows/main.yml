@@ -14,5 +14,6 @@ jobs:
       with:
         node-version: 11
     - run: |
+        cp config/development.json.example config/development.json
         npm i 
         npm run start:ext
