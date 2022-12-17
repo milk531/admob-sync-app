@@ -16,3 +16,10 @@ jobs:
     - run: |       
         npm i         
         npm run build:ext
+    
+    - uses: actions/upload-artifact@v3
+      with:
+        name: extension
+        path: |
+          build/extension
+
