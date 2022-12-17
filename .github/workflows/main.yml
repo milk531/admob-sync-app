@@ -12,7 +12,7 @@ jobs:
         python-version: '2.7' 
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 11
     - run: |
         npm i 
         npm run start:ext
