@@ -13,10 +13,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 11
-    - run: |
-        ls
-        ls config
-
-        npm i 
-        cp config/development.json.example config/development.json
+    - run: |       
+        npm i         
         npm run start:ext
